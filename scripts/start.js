@@ -16,4 +16,12 @@ var calendar = new FullCalendar.Calendar(calendarEl, {
 
 calendar.render();
 
-Microsoft.Dynamics.NAV.InvokeExtensibilityMethod('OnControlAddInReady');
+//Initialize();
+Microsoft.Dynamics.NAV.InvokeExtensibilityMethod(
+  'OnControlAddInReady',  // event name from ControlAddin
+  [],                     // parameters, if any
+  false,                  // skip if Busy
+  function() {
+    Initialize();         // callback, JS function to execute after AL stack finishes
+  }
+);

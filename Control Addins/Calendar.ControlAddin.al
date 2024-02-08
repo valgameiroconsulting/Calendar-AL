@@ -27,4 +27,6 @@ controladdin "ad_CalendarCtrl"
     HorizontalStretch = true;
 
     event OnControlAddInReady();
+    event OnInvoke(Context: JsonObject);
+    procedure OnInvokeResult(Result: JsonObject);
 }

@@ -1,14 +1,30 @@
 {
     "version": "0.2.0",
     "configurations": [
-        {
-            "name": "Microsoft cloud sandbox",
+        // Use Ctrl+Space to trigger IntelliSense and get assistance on the supported configurations for AL development.
+        {       
             "type": "al",
             "request": "launch",
-            "startupObjectId": 22,
+            "name": "UAT",
+            "tenant": "e7d7f109-2a05-444f-be64-c9a54acfa5fd",
+            "environmentType": "Sandbox",
+            "environmentName": "Sandbox",
             "breakOnError": true,
-            "breakOnRecordWrite": false,
-            "launchBrowser": true
+            "launchBrowser": true,
+            "schemaUpdateMode": "ForceSync",
+            //"executionContext": "",
+        },
+        {       
+            "type": "al",
+            "request": "launch",
+            "name": "DEV",
+            "tenant": "e7d7f109-2a05-444f-be64-c9a54acfa5fd",
+            "environmentType": "Sandbox",
+            "environmentName": "DEV",
+            "breakOnError": true,
+            "launchBrowser": true,
+            "schemaUpdateMode": "ForceSync",
+            //"executionContext": "",
         }
     ]
 }
