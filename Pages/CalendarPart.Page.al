@@ -1,4 +1,4 @@
-page 50100 "ad_Calendar Part"
+page 50100 "Calendar Part"
 {
     PageType = CardPart;
     Caption = 'Calendar';
@@ -7,7 +7,7 @@ page 50100 "ad_Calendar Part"
     {
         area(Content)
         {
-            usercontrol(Calendar; ad_CalendarCtrl)
+            usercontrol(Calendar; calendarControl)
             {
                 ApplicationArea = All;
 
@@ -15,13 +15,17 @@ page 50100 "ad_Calendar Part"
                 begin
                 end;
 
-                trigger OnInvoke(Context: JsonObject)
+                trigger OnInvoke(Context: Text)
                 var
-                    Response: JsonObject;
+                    Response: Text;
+                    CreationDate: Date;
 
                 begin
-                    if Confirm('Invoking?') then
-                        CurrPage.Calendar.OnInvokeResult(Response);
+                    //if Confirm('Invoking?') then
+                    //    CurrPage.Calendar.OnInvokeResult(Response);
+                    //Message(Context); 
+                    // Use date for Production Batch creation
+                    Evaluate(CreationDate, Context);
                 end;
             }
         }

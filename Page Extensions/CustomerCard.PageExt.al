@@ -4,7 +4,7 @@ pageextension 50100 "ad_Customer Card Ext." extends "Customer Card"
     {
         addafter(General)
         {
-            part("Calendar"; "ad_Calendar Part")
+            part("Calendar"; "Calendar Part")
             {
                 ApplicationArea = All;
             }

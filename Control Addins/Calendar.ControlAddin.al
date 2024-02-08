@@ -1,7 +1,8 @@
-controladdin "ad_CalendarCtrl"
+controladdin "calendarControl"
 {
     Scripts =
         'scripts/core/main.min.js',
+        'scripts/interaction/main.min.js',
         'scripts/daygrid/main.min.js',
         'scripts/timegrid/main.min.js',
         'scripts/list/main.min.js',
@@ -27,6 +28,6 @@ controladdin "ad_CalendarCtrl"
     HorizontalStretch = true;
 
     event OnControlAddInReady();
-    event OnInvoke(Context: JsonObject);
-    procedure OnInvokeResult(Result: JsonObject);
+    event OnInvoke(Context: Text);
+    procedure OnInvokeResult(Result: Text);
 }

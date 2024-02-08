@@ -1,23 +1,25 @@
 {
   "id": "a9e01d99-b5ce-4fd9-92dc-1c0f7202e6ab",
   "name": "Calendar AL",
-  "publisher": "Ariestya Dibyanugraha",
+  "publisher": "Val Gameiro Consulting, LLC",
   "brief": "",
   "description": "",
-  "version": "1.0.1.1",
+  "version": "23.0.0.1",
+  "platform": "23.0.0.0",
+  "application": "23.0.0.0",
+  "runtime": "12.0",
   "privacyStatement": "",
   "EULA": "",
   "help": "",
   "url": "",
   "logo": "",
-  "capabilities": [],
   "dependencies": [],
   "screenshots": [],
-  "platform": "14.0.0.0",
-  "application": "14.0.0.0",
-  "idRange": {
-    "from": 50100,
-    "to": 50149
-  },
-  "runtime": "3.0"
+  "resourceExposurePolicy": {"allowDebugging": true,"allowDownloadingSource": true, "includeSourceInSymbolFile": true},
+  "idRanges": [
+    {
+      "from": 50100,
+      "to": 50149
+    }
+  ]
 }
